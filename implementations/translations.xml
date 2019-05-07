@@ -185,6 +185,9 @@
         <item id="CohortSummary">
                 <translation lang="en">CohortSummary</translation>
         </item>
+        <item id="ComparativeEvidence">
+                <translation lang="en">ComparativeEvidence</translation>
+        </item>
 	<item id="Communication">
 		<translation lang="en">Communication</translation>
 		<translation lang="es">Comunicación</translation>
