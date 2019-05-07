@@ -182,6 +182,9 @@
 		<translation lang="it">SistemaDiCodifica</translation>
 		<translation lang="zh">代码系统</translation>
 	</item>
+        <item id="CohortSummary">
+                <translation lang="en">CohortSummary</translation>
+        </item>
 	<item id="Communication">
 		<translation lang="en">Communication</translation>
 		<translation lang="es">Comunicación</translation>
