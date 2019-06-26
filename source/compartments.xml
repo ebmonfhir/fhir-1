@@ -811,11 +811,8 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-<<<<<<< HEAD
-   <TopRowBottomPane>126</TopRowBottomPane>
-=======
    <TopRowBottomPane>142</TopRowBottomPane>
->>>>>>> upstream/argo-subscription
+
    <ActivePane>2</ActivePane>
    
    <ProtectObjects>False</ProtectObjects>
