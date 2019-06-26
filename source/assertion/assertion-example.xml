@@ -4,21 +4,35 @@
     <title value="Example of an assertion"/>
     <status value="draft"/>
     <useContext>
-
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="age"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://meshb.nlm.nih.gov"/>
+                <code value="D000328"/>
+                <display value="Adult"/>
+            </coding>
+        </valueCodeableConcept>
     </useContext>
     <relatedArtifact>
         <type value="derived-from"/>
         <url value="https://app.magicapp.org/public/guideline/EZ1w8n/pico/31831/widget?tab=outcome"/>
     </relatedArtifact>
-    <note value="This is a filler file; a real example still needs to be implemented."/>
+    <!--<note value="This is a filler file; a real example still needs to be implemented."/>-->
     <referentGroup>
         <evidenceSource>
-
+            <reference value="Group-Sepsis"/>
+            <type value="Group"/>
+            <display value="This example is in need of revision"/>
         </evidenceSource>
     </referentGroup>
     <variableDefinition>
         <actualDefinition>
-
+            <reference value="EvidenceVariable-Mortality-Long-Term"/>
+            <type value="EvidenceVariable"/>
+            <display value="Mortality Longer term (Follow up: 60 days to 1 year)"/>
         </actualDefinition>
     </variableDefinition>
 </Assertion>
