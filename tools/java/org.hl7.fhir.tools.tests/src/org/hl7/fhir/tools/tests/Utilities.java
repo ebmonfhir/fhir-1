@@ -31,4 +31,5 @@ public class Utilities {
 			throw new Exception("Content is not as expected @ "+Integer.toString(one.available()));
 		}
 	}
+	public void clearDirectory(String dirname) {}
 }
