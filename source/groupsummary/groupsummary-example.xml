@@ -1,44 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GroupSummary xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-	<id value="example"/>
-	<title value="Corticosteroids vs No corticosteroids"/>
-	<status value="draft"/>
-	<summaryPublisher>
-		<name value="MAGIC"/>
-	</summaryPublisher>
-	<relatedArtifact>
-		<type value="derived-from"/>
-		<url value="https://app.magicapp.org/public/guideline/EZ1w8n/pico/31831/widget?tab=outcome"/>
-	</relatedArtifact>
-	<description value="(This example is in need of revision) Corticosteroids vs no corticosteroids for patients with sepsis"/>
-	<synthesisType>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/synthesis-type"/>
-			<code value="std-MA"/>
-			<display value="summary data meta-analysis"/>
-		</coding>
-	</synthesisType>
-	<studyType>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/study-type"/>
-			<code value="RCT"/>
-			<display value="randomized trial"/>
-		</coding>
-	</studyType>
-	<population>
-		<description value="Patients with sepsis"/>
-		<intendedCohort>
-			<reference value="Group-Sepsis"/>
-			<type value="Group"/>
-			<display value="Patients with sepsis"/>
-		</intendedCohort>
-	</population>
-	<variableDefinition>
-		<actualDefinition>
-			<reference value="EvidenceVariable-Mortality-Long-Term"/>
-			<type value="EvidenceVariable"/>
-			<display value="Mortality Longer term (Follow up: 60 days to 1 year)"/>
-		</actualDefinition>
-	</variableDefinition>
+
 
 </GroupSummary>
