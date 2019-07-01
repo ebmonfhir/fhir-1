@@ -1,49 +1,601 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<GroupSummary xmlns="http://hl7.org/fhir">
-    <id value="example"/>
-    <text> <status value="generated"/> <div xmlns="http://www.w3.org/1999/xhtml"><p> <b> Generated Narrative with Details</b> </p> <p> <b> id</b> : example</p> <p> <b> title</b> : Corticosteroids vs No corticosteroids</p> <p> <b> status</b> : draft</p> <h3> SummaryPublishers</h3> <table> <tr> <td> -</td> <td> <b> Name</b> </td> </tr> <tr> <td> *</td> <td> MAGIC</td> </tr> </table> <p> <b> relatedArtifact</b> : </p> <p> <b> description</b> : (This example is in need of revision) Corticosteroids vs no corticosteroids for patients
-        with sepsis</p> <p> <b> synthesisType</b> : summary data meta-analysis <span> (Details : {http://terminology.hl7.org/CodeSystem/synthesis-type code 'std-MA' = 'summary
-        data meta-analysis', given as 'summary data meta-analysis'})</span> </p> <p> <b> studyType</b> : randomized trial <span> (Details : {http://terminology.hl7.org/CodeSystem/study-type code 'RCT' = 'randomized
-        trial', given as 'randomized trial'})</span> </p> <h3> Populations</h3> <table> <tr> <td> -</td> <td> <b> Description</b> </td> <td> <b> IntendedCohort</b> </td> </tr> <tr> <td> *</td> <td> Patients with sepsis</td> <td> <a> Patients with sepsis</a> </td> </tr> </table> <h3> VariableDefinitions</h3> <table> <tr> <td> -</td> <td> <b> ActualDefinition</b> </td> </tr> <tr> <td> *</td> <td> <a> Mortality Longer term (Follow up: 60 days to 1 year)</a> </td> </tr> </table> </div> </text> <title value="Corticosteroids vs No corticosteroids"/>
-    <status value="draft"/>
-    <summaryPublisher>
-        <name value="MAGIC"/>
-    </summaryPublisher>
-    <relatedArtifact>
-        <type value="derived-from"/>
-        <url value="https://app.magicapp.org/public/guideline/EZ1w8n/pico/31831/widget?tab=outcome"/>
-    </relatedArtifact>
-    <description value="(This example is in need of revision) Corticosteroids vs no corticosteroids for patients
-   with sepsis"/>
-    <synthesisType>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/synthesis-type"/>
-            <code value="std-MA"/>
-            <display value="summary data meta-analysis"/>
-        </coding>
-    </synthesisType>
-    <studyType>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/study-type"/>
-            <code value="RCT"/>
-            <display value="randomized trial"/>
-        </coding>
-    </studyType>
-    <population>
-        <description value="Patients with sepsis"/>
-        <intendedCohort>
-            <reference value="Group-Sepsis"/>
-            <type value="Group"/>
-            <display value="Patients with sepsis"/>
-        </intendedCohort>
-    </population>
-    <variableDefinition>
-        <actualDefinition>
-            <reference value="EvidenceVariable-Mortality-Long-Term"/>
-            <type value="EvidenceVariable"/>
-            <display value="Mortality Longer term (Follow up: 60 days to 1 year)"/>
-        </actualDefinition>
-    </variableDefinition>
-
+<GroupSummary xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<summaryPublisher>
+		<name value="MAGIC"/>
+	</summaryPublisher>
+	<relatedArtifact>
+		<url value="https://app.magicapp.org/public/guideline/EZ1w8n/pico/31831/widget?tab=outcome"/>
+	</relatedArtifact>
+	<description value="Corticosteroids vs no corticosteroids for patients with sepsis"/>
+	<synthesisType>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/synthesis-type"/>
+			<code value="std-MA"/>
+			<display value="summary data meta-analysis"/>
+		</coding>
+	</synthesisType>
+	<studyType>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/study-type"/>
+			<code value="RCT"/>
+			<display value="randomized trial"/>
+		</coding>
+	</studyType>
+	<population>
+		<description value="Patients with sepsis"/>
+		<intendedCohort>
+			<type value="Group"/>
+			<identifier value="Group-Sepsis"/>
+			<display value="Patients with sepsis"/>
+		</intendedCohort>
+	</population>
+	<variableDefinition>
+		<description value="Corticosteroids"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="exposure"/>
+				<display value="exposure"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Steroids"/>
+			<display value="Corticosteroids"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="No corticosteroids"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="referenceExposure"/>
+				<display value="referenceExposure"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-No-Steroids"/>
+			<display value="No corticosteroids"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Mortality Longer term (60 days to 1 year)"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Mortality-Long-Term"/>
+			<display value="Mortality Longer term (Follow up: 60 days to 1 year)"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Mortality Short term (28-31 days)"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Mortality-Short-Term"/>
+			<display value="Mortality Short term (Follow up: 14-30 days)"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Shock reversal 1 week"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Shock-reversal"/>
+			<display value="Shock reversal (Follow up: 7 days)"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Neuromuscular weakness"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Neuromuscular-Weakness"/>
+			<display value="Neuromuscular weakness"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Gastrointestinal bleeding"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Gastrointestinal-Bleeding"/>
+			<display value="Gastrointestinal bleeding"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Neuropsychiatric events"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Neuropsychiatric-Events"/>
+			<display value="Neuropsychiatric events"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Hypernatremia"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Hypernatremia"/>
+			<display value="Hypernatremia"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Superinfection"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Superinfection"/>
+			<display value="Superinfection"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Stroke"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Stroke"/>
+			<display value="Stroke"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Myocardial infarction"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Myocardial-Infarction"/>
+			<display value="Myocardial infarction"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Hyperglycaemia"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Hyperglycaemia"/>
+			<display value="Hyperglycaemia"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="ICU length of stay"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-ICU-Length-Of-Stay"/>
+			<display value="ICU length of stay"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Hospital length of stay"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Hospital-Length-Of-Stay"/>
+			<display value="Hospital length of stay"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Organ dysfunction"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Organ-Dysfunction"/>
+			<display value="Organ dysfunction (Follow up: 7 days)"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<variableDefinition>
+		<description value="Quality of Life"/>
+		<variableRole>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/variable-role"/>
+				<code value="measuredVariable"/>
+				<display value="measured variable"/>
+			</coding>
+		</variableRole>
+		<actualDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="???"/>
+			<display value="???"/>
+		</actualDefinition>
+		<intendedDefinition>
+			<type value="EvidenceVariable"/>
+			<identifier value="EvidenceVariable-Quality-Of-Life"/>
+			<display value="Quality of Life"/>
+		</intendedDefinition>
+	</variableDefinition>
+	<assertions>
+		<reference value="https://khalid-shahin.github.io/JSON-Tree-Writer/EBMonFHIR-LinnAssertion01.html"/>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityLongTerm-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)"/>
+	</assertions>
+	<assertions>
+		<reference value="https://khalid-shahin.github.io/JSON-Tree-Writer/EBMonFHIR-LinnAssertion02.html"/>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityLongTerm-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)"/>
+	</assertions>
+	<assertions>
+		<reference value="https://khalid-shahin.github.io/JSON-Tree-Writer/EBMonFHIR-LinnAssertion03.html"/>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityLongTerm-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityShortTerm-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Mortality Short term (Follow up: 14-30 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityShortTerm-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Mortality Short term (Follow up: 14-30 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MortalityShortTerm-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Mortality Short term (Follow up: 14-30 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ShockReversal-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Shock reversal (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ShockReversal-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Shock reversal (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ShockReversal-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Shock reversal (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuromuscularWeakness-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Neuromuscular weakness"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuromuscularWeakness-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Neuromuscular weakness"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuromuscularWeakness-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Neuromuscular weakness"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-GastrointestinalBleeding-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Neuromuscular weakness"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-GastrointestinalBleeding-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Neuromuscular weakness"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-GastrointestinalBleeding-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Gastrointestinal bleeding"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuropsychiatricEvents-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Neuropsychiatric events"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuropsychiatricEvents-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Neuropsychiatric events"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-NeuropsychiatricEvents-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Neuropsychiatric events"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hypernatremia-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Hypernatremia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hypernatremia-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Hypernatremia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hypernatremia-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Hypernatremia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Superinfection-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Superinfection"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Superinfection-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Superinfection"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Superinfection-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Superinfection"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Stroke-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Stroke"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Stroke-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Stroke"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Stroke-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Stroke"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MyocardialInfarction-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Myocardial infarction"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MyocardialInfarction-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Myocardial infarction"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-MyocardialInfarction-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Myocardial infarction"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hyperglycaemia-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Hyperglycaemia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hyperglycaemia-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Hyperglycaemia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-Hyperglycaemia-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Hyperglycaemia"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ICULengthOfStay-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with ICU length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ICULengthOfStay-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with ICU length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-ICULengthOfStay-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with ICU length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-HospitalLengthOfStay-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Hospital length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-HospitalLengthOfStay-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Hospital length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-HospitalLengthOfStay-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Hospital length of stay"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-OrganDysfunction-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Organ dysfunction (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-OrganDysfunction-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Organ dysfunction (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-OrganDysfunction-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Organ dysfunction (Follow up: 7 days)"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-QualityOfLife-Corticosteroids-vs-NoCorticosteroids"/>
+		<display value="Corticosteroids vs No corticosteroids for Patients with Sepsis with Quality of Life"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-QualityOfLife-Corticosteroids"/>
+		<display value="Corticosteroids for Patients with Sepsis with Quality of Life"/>
+	</assertions>
+	<assertions>
+		<type value="Assertion"/>
+		<identifier value="Assertion-QualityOfLife-NoCorticosteroids"/>
+		<display value="No corticosteroids for Patients with Sepsis with Quality of Life"/>
+	</assertions>
 </GroupSummary>
