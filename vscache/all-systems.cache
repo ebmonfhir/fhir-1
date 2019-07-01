@@ -452,7 +452,7 @@ e: {
   "status" : "draft",
   "experimental" : false,
   "date" : "2018-12-14T14:47:58+11:00",
-  "description" : "Value Set Contents (Expansion) for DataElement SDC Object Class at Mon, Jun 17, 2019 06:42+1000",
+  "description" : "Value Set Contents (Expansion) for DataElement SDC Object Class at Mon, Jul 1, 2019 11:30-0400",
   "expansion" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
@@ -112766,5 +112766,32 @@ v: {
   "display" : "",
   "severity" : "error",
   "error" : "The code system \"\" is not known; The code provided (#MetadataResource) is not  valid in the value set FHIRDefinedType"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "exposure"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"exposure\"; The code provided (#exposure) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "referenceExposure"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"referenceExposure\"; The code provided (#referenceExposure) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "measuredVariable"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known for the code \"measuredVariable\"; The code provided (#measuredVariable) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
