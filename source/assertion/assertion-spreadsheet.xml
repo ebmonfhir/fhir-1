@@ -17,7 +17,7 @@
   
   
   
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>8</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -3999,7 +3999,6 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>90</Zoom>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -6329,29 +6328,29 @@
     <Cell ss:StyleID="s155"><Data ss:Type="String">In Book</Data><Comment ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font html:Color="#000000" html:Face="Tahoma" html:Size="8" x:Family="Swiss">Include this example in the book form?</Font>       </ss:Data></Comment><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s197"/>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">Assertion1</Data></Cell>
     <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s198"/>
-    <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s172"/>
+    <Cell ss:StyleID="s198"><Data ss:Type="String">Corticosteroids vs No corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">example</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">assertion-example.xml</Data></Cell>
     <Cell ss:StyleID="s186"/>
     <Cell ss:StyleID="s199"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s197"/>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">Assertion2</Data></Cell>
     <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s198"/>
-    <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s172"/>
+    <Cell ss:StyleID="s198"><Data ss:Type="String">Corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">Assertion-Example-MortalityLongTerm-Corticosteroids</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">assertion-example-mortalitylongterm-corticosteroids.xml</Data></Cell>
     <Cell ss:StyleID="s186"/>
     <Cell ss:StyleID="s199"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s197"/>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">Assertion3</Data></Cell>
     <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s198"/>
-    <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s172"/>
+    <Cell ss:StyleID="s198"><Data ss:Type="String">No corticosteroids for Patients with Sepsis with Mortality (60 days to 1 year)</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">Assertion-Example-MortalityLongTerm-NoCorticosteroids</Data></Cell>
+    <Cell ss:StyleID="s172"><Data ss:Type="String">assertion-example-mortalitylongterm-nocorticosteroids.xml</Data></Cell>
     <Cell ss:StyleID="s186"/>
     <Cell ss:StyleID="s199"/>
    </Row>
@@ -6678,6 +6677,12 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
