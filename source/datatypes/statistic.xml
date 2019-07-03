@@ -17,8 +17,8 @@
   
   
   
-  <ActiveSheet>8</ActiveSheet>
-  <FirstVisibleSheet>1</FirstVisibleSheet>
+  <ActiveSheet>13</ActiveSheet>
+  <FirstVisibleSheet>4</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -3017,9 +3017,9 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>13</TopRowBottomPane>
+   <TopRowBottomPane>10</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>5</LeftColumnRightPane>
+   <LeftColumnRightPane>3</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    
    <ProtectObjects>False</ProtectObjects>
@@ -5741,7 +5741,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -8055,6 +8054,7 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Zoom>150</Zoom>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
@@ -8146,23 +8146,23 @@
     <Cell ss:StyleID="s158"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s156"/>
-    <Cell ss:StyleID="s144"/>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">I-sqHeterogeneity</Data></Cell>
+    <Cell ss:StyleID="s144"><Data ss:Type="Number">7</Data></Cell>
     <Cell ss:StyleID="s131"/>
     <Cell ss:StyleID="s166"/>
-    <Cell ss:StyleID="s166"/>
-    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">I-sqHeterogeneity</Data></Cell>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">I-sqHeterogeneity</Data></Cell>
     <Cell ss:StyleID="s144"/>
     <Cell ss:StyleID="s144"/>
     <Cell ss:StyleID="s158"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s156"/>
-    <Cell ss:StyleID="s144"/>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">pForHeterogeneity</Data></Cell>
+    <Cell ss:StyleID="s144"><Data ss:Type="Number">8</Data></Cell>
     <Cell ss:StyleID="s131"/>
     <Cell ss:StyleID="s166"/>
-    <Cell ss:StyleID="s166"/>
-    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">p value for heterogeneity</Data></Cell>
+    <Cell ss:StyleID="s166"><Data ss:Type="String">p value for heterogeneity</Data></Cell>
     <Cell ss:StyleID="s144"/>
     <Cell ss:StyleID="s144"/>
     <Cell ss:StyleID="s158"/>
@@ -8627,6 +8627,8 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Zoom>150</Zoom>
+   <Selected/>
+   
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
